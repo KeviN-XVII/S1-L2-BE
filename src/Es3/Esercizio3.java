@@ -13,10 +13,12 @@ public class Esercizio3 {
             if (frase.equals(":q")){
                 break;
             }
+            String risultato = "";
             for (int i=0;i<frase.length()-1;i++){
-                System.out.print(frase.charAt(i)+",");
+                risultato= risultato + frase.charAt(i)+",";
             }
-            System.out.println(frase.charAt(frase.length() - 1));
+            risultato = risultato + frase.charAt(frase.length() - 1);
+            System.out.println(risultato);
         }
     }
 }
